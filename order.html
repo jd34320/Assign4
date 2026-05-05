@@ -1,0 +1,131 @@
+<!-- Jessica Dixon
+ May 5, 2026
+ assign4 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dixon - Assign 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="amuse_styles.css">
+</head>
+
+<body>
+<div id="wrapper"> 
+
+<header>
+  <img src="images/candypalace.png" alt="Candy Palace Logo">
+  <h1>Candy Palace's Where Your Candy Dsesire Comes to Life!</h1>
+</header>
+
+<nav>
+    <ul class="navbar">
+        <a href="index.html">Home</a>
+        <a href="rides&attractions.html">Rides</a>
+        <a href="info.html">Info</a>
+        <a href="order.html">Order Tickets</a>
+        <a href="index.html#upcoming-events">Upcoming Events</a>
+        <a href="index.html#park-news"> Park News</a>
+    </ul>
+</nav>
+
+<main> 
+    <h2>Order Ticket Online</h2>
+
+    <form onsubmit="orderTics(); return false;">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <lable for="name">Name:</lable>
+            <input type="text" id="name" name="name" required><br>
+            
+            <lable for="email">Email Address:</lable>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+        
+            <lable for="phone">Phone Number:</lable>
+            <input type="tel" id="phone" required><br>
+        
+            <lable for="age">Age:</lable>
+            <input type="number" id="age" name="age" min="1" max="60"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Ticket Information</legend>
+                <label for="tickets">Number of Tickets</label>
+                <select id="tickets" name="ticket">
+                    <option value="#"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                    <option value="special">Party Special (10+)</option>
+                </select>
+                <br><br>
+                
+                <label for="donationRange">How much do you want to donate to the park?</label>
+                <input type="range" id="donationRange" name="donation" min="1" max="100" step="3" value="50" required>
+                <br><br>
+                
+                <label for="addOns">Would you like to add any of the following passes to your ticket(s)?</label>
+                <br><br>
+
+                <input type="checkbox" id="mealPass" name="pass" value="mealPass">
+                <label for="mealPass">Meal Pass</label>
+
+                <input type="checkbox" id="fatsPass" name="pass" value="fastPass">
+                <label for="fastPass">Fast Pass</label>
+                <br><br>
+
+                <input type="checkbox" id="photoPackage" name="package" value="photoPackage">
+                <label for="photopackage">Photo Package</label>
+
+                <input type="checkbox" id="earlyAccess" name="pass" value="earlyAccess">
+                <label for="earlyAccess">Early Accees</label>
+        
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Delivery Information</legend>
+            <label for="delivery">Delivery Date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <label for="recieve">How would you like to recieve tickets?</label>
+            <br><br>
+
+            <input type="radio" id="emailOption">
+            <label for="emailOption">Email</label>
+            
+            <input type="radio" id="text" name="recieve" value="text">
+            <label for="text">Text</label>
+
+            <input type="radio" id="download" name="recieve" value="download">
+            <label for="download">Digital Download</label>
+
+            <br><br>
+
+            <input type="radio" id="mail" name="recieve" value="mail">
+            <label for="mail">Mail</label>
+
+            <input type="radio" id="app" name="recieve" value="app">
+            <label for="app">Ticketing App</label>
+
+            <input type="radio" id="wallet" name="recieve" value="wallet">
+            <label for="wallet">Digital Wallet</label>
+
+        </fieldset>
+        
+        <button type="submit">Order Tickets</button>
+    </form>
+</main>
+
+<footer>
+    <p>Copyright © May 4, 2026 - <a href="https://mail.google.com/mail/u/0/#inbox">GSU Email</a></p>
+</footer>
+    
+    <script src="amuse_script.js"></script>
+
+</div>
+</body>
+</html>
